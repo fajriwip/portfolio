@@ -11,7 +11,7 @@ body {
 #home-section {
   background: url(./img/home.jpg) no-repeat center top fixed;
   background-size: cover;
-  min-height: 700px;
+  min-height: 70vh;
 }
 #home-section .dark-overlay {
   background-color: rgba(0, 0, 0, 0.7);
@@ -19,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 700px;
+  min-height: 70vh;
 }
 #home-section .home-inner {
   padding-top: 150px;
@@ -36,6 +36,22 @@ body {
 }
 
 #explore-section .fa {
+  color: #fff;
+  background: #333;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+#create-section .fa {
+  color: #008ed6;
+  background: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+#share-section .fa {
   color: #fff;
   background: #333;
   padding: 4px;
