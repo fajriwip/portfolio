@@ -26,7 +26,6 @@
 .flex-1 {
   background-color: rgb(0, 63, 63);
   color: rgb(196, 196, 196);
-  overflow: hidden;
 }
 
 .hero h1 {
@@ -75,6 +74,7 @@ nav, footer, .hero {
 }
 
 .card-photo {
+  position: relative;
   flex: 2;
   overflow: hidden;
 }
@@ -106,5 +106,24 @@ nav, footer, .hero {
 }
 
 img {
+  top: -100px;
+  position: absolute;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .card-photo {
+    position: static;
+  }
+
+  img {
+    position: static;
+    min-height: 100%
+  }
+}
+
+@media (max-width: 768px) {
+  .flexbox {
+    flex-direction: column;
+  }
 }
